@@ -1,0 +1,126 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #444;
+}
+
+.card{
+background-image: linear-gradient(#333, #333);
+overflow: hidden;
+border-radius: 16px;
+max-width: 360px;
+flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.card .img{
+    background-image: url(cartman.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: .8;
+    transition: 1.2s;
+    z-index: 2;
+}
+    .card:hover{
+        background-image: linear-gradient(rgb(201, 2, 2), rgb(95, 3, 3)) ;
+    }
+
+
+.card:hover .img{
+    opacity: 1;
+    width: 440px;
+}
+
+.card .img span{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+.card .content p{
+margin-bottom: 0;
+}
+
+.card .content{
+    padding: 0 20px;
+    overflow: hidden;
+    transition: all 1.2s;
+    box-sizing: border-box;
+    transform: translateY(30px);
+    height: 0;
+    opacity: 0;
+}
+
+.card:hover .content{
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+.card .content .title{
+    font: size 24px;
+    font-weight: bold;
+}
+
+.card .content .desc{
+    font-size: 14px;
+    font-weight: bold;
+    opacity: .7;
+}
+
+.card .arrow{
+    padding: 15px;
+    transform:rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow{
+    transform: rotate(0);
+}
+
+.card .arrow span{
+    font-size: 24px;
+}
+
+.rodape{
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#1e1e2a ;
+    display: flex;
+    
+}
+
+.logo{
+    width: 25px;
+    height: 25px;
+}
+.paragrafo{
+    margin: 3px;
+}
